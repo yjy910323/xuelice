@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div class="contenter">
       <router-view />
     </div>
     <div class="footer">
@@ -24,7 +24,7 @@ export default {
   data: function () {
     return {
       tabs: [{
-        name: '评 测',
+        name: '日 常',
         path: '/home/main',
         icon: 'el-icon-news'
       },
@@ -34,7 +34,7 @@ export default {
         icon: 'el-icon-edit-outline'
       },
       {
-        name: '我 的',
+        name: '我',
         path: '/home/me',
         icon: 'el-icon-tickets'
       }]
@@ -50,12 +50,16 @@ export default {
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
+.contenter
+  margin-bottom 65px
 .footer
   position fixed
   bottom 0px
   width 100vw
   height 60px
   border-top 1px solid #d2d2d2
+  z-index 999
+  background white
   .tabs
     display flex
     justify-content center

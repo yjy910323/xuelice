@@ -47,32 +47,23 @@
               <div class="form-group-title">验证码</div>
               <div class="form-group-val">
                 <input placeholder="6位"/>
-                <div style="display: inline-block">
+                <div style="display: inline-block;float: right;">
                   <el-button round size="mini">发送验证码</el-button>
                 </div>
               </div>
             </div>
 
             <div class="form-group">
-              <div class="form-group-title">所在地区</div>
+              <div class="form-group-title">孩子姓名</div>
               <div class="form-group-val">
-                <el-cascader size="mini" :options="locations">
-                </el-cascader>
+                <input placeholder=""/>
               </div>
             </div>
 
             <div class="form-group">
-              <div class="form-group-title">所在学校</div>
+              <div class="form-group-title">班级号</div>
               <div class="form-group-val">
-                <el-cascader size="mini" :options="schools">
-                </el-cascader>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="form-group-title">学生姓名</div>
-              <div class="form-group-val">
-                <input placeholder="张三"/>
+                <input placeholder="14位"/>
               </div>
             </div>
 

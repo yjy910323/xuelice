@@ -6,6 +6,10 @@ import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import Router from 'vue-router'
+import 'vue-event-calendar/dist/style.css'
+import vueEventCalendar from 'vue-event-calendar'
+
+Vue.use(vueEventCalendar, {locale: 'zh'})
 
 Vue.config.productionTip = false
 
