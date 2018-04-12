@@ -30,6 +30,11 @@ export default new Router({
         name: 'Me',
         component: resolve => require(['@/components/home/Me'], resolve)
       }]
+    },
+    {
+      path: '/addSchool',
+      name: 'addSchool',
+      component: resolve => require(['@/components/home/main/AddSchool'], resolve)
     }
   ]
 })

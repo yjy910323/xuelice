@@ -30,7 +30,9 @@
         课程、作业、全面测评
       </div>
       <div class="nav">
-        <el-button type="primary" size="mini" round>去添加</el-button>
+        <router-link to="/addSchool">
+          <el-button type="primary" size="mini" round>去添加</el-button>
+        </router-link>
       </div>
     </div>
 
