@@ -4,13 +4,13 @@
       <i style="float:right;color:white;" @click="reged = false" class="el-icon-close"></i>
     </router-link>
     <h4>赶快加入自己的学校班级</h4>
+
     <div>
       <div class="menu-type">
         <div @click="codeType=true;searchType=false;" :class="{choosen : codeType}" class="menu-type">验证加入</div>
         <div @click="codeType=false;searchType=true;" :class="{choosen : searchType}" class="menu-type">搜索加入</div>
       </div>
       <div class="tab" v-show="searchType">
-
       </div>
       <div class="tab" v-show="codeType">
         <form>
@@ -23,6 +23,9 @@
               </div>
             </div>
           </div>
+          <div style="text-align: center;">
+            <el-button size="mini" round>快速加入</el-button>
+          </div>
         </form>
       </div>
 
@@ -33,7 +36,7 @@
 <script>
   export default {
     components: {},
-    name: 'addSchool',
+    name: 'AddSchool',
     props: {},
     data: function () {
       return {

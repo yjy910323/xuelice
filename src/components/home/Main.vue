@@ -1,5 +1,19 @@
 <template>
   <div>
+
+    <el-dialog
+      title="通知"
+      :visible.sync="noticeDialog"
+      width="90%">
+      <span>这是一段信息</span>
+      <span slot="footer" class="dialog-footer">
+        <el-button @click="noticeDialog = false">取 消</el-button>
+        <el-button type="primary" @click="noticeDialog = false">确 定</el-button>
+      </span>
+    </el-dialog>
+
+
+
     <div class="user-info">
       <div class="avatar-wrapper">
         <img class="avatar" src="../../assets/img/index-logo.jpg">
@@ -44,7 +58,9 @@
         练习、定制、个性学习
       </div>
       <div class="nav">
-        <el-button type="primary" size="mini" round>去搜索</el-button>
+        <router-link to="/home/addCamp">
+          <el-button type="primary" size="mini" round>去搜索</el-button>
+        </router-link>
       </div>
     </div>
   </div>
@@ -57,6 +73,7 @@ export default {
   props: {},
   data: function () {
     return {
+      noticeDialog: true,
       demoEvents: [{
         date: '2018/04/15',
         title: 'eat',

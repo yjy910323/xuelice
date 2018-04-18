@@ -29,6 +29,11 @@ export default new Router({
         path: 'me',
         name: 'Me',
         component: resolve => require(['@/components/home/Me'], resolve)
+      },
+      {
+        path: 'addCamp',
+        name: 'addCamp',
+        component: resolve => require(['@/components/home/main/AddCamp'], resolve)
       }]
     },
     {
